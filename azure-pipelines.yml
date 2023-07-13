@@ -7,11 +7,14 @@
 trigger:
 - master
 
+variables:
+- group: "Anup Agarwal"
+
+
 pool:
   vmImage: ubuntu-latest
 
-variables:
-- group: "Anup Agarwal"
+
 
 steps:
 
