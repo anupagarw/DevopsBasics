@@ -13,8 +13,8 @@ variables:
 
 resources:
  pipelines:
- -  pipeline: "BuildPipelineOld"
-    source: https://dev.azure.com/AnupAgarwal1/DevOps_Project_01/_apps/hub/ms.vss-build-web.ci-designer-hub?pipelineId=2&branch=main
+ -  pipeline: "ReferringOtherPipeline"
+    source: Build Pipeline Old
 
 pool:
   vmImage: ubuntu-latest
