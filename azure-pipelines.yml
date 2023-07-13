@@ -11,6 +11,9 @@ variables:
 - group: Anup Agarwal
 - group: My Variable Group
 
+resources:
+ pipelines:
+ -  pipeline: "BuildPipelineOld"
 
 pool:
   vmImage: ubuntu-latest
