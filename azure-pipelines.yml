@@ -30,8 +30,26 @@ steps:
   inputs:
     Contents: '**/*.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
+
+
+#
+# - task: DownloadPackage@1
+#   inputs:
+#     packageType: 'nuget'
+#     feed: 'e0dbf50f-79a0-4290-aa13-35ab538d7dcb/ac35df03-956b-4d62-9a2b-f882097518d7'
+#     view: 'b10b1f1c-bd1f-4a74-8911-99ea20073220'
+#     definition: '72e00b82-c475-4fab-bf81-8915ce771fa0'
+#     version: '2.0.1'
+#     downloadPath: '$(System.ArtifactsDirectory)'
+
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'Artifact-01'
     publishLocation: 'Container'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    publishLocation: 'pipeline'
