@@ -8,7 +8,7 @@ trigger:
 - master
 
 # variables:
-# - group: "Anup Agarwal"
+# - group: $(Anup Agarwal)
 
 
 pool:
