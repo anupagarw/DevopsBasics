@@ -10,6 +10,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: "Anup Agarwal"
+
 steps:
 
 # - task: GitHubComment@0
