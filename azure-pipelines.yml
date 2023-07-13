@@ -49,7 +49,7 @@ steps:
     ArtifactName: 'Artifact-01'
     publishLocation: 'Container'
 
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    publishLocation: 'pipeline'
+# - task: PublishPipelineArtifact@1
+#   inputs:
+#     targetPath: '$(Pipeline.Workspace)'
+#     publishLocation: 'pipeline'
