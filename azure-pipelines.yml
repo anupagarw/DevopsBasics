@@ -58,3 +58,9 @@ steps:
 #   inputs:
 #     targetPath: '$(Pipeline.Workspace)'
 #     publishLocation: 'pipeline'
+
+# - task: PublishTestResults@2
+#   inputs:
+#     testResultsFormat: 'VSTest'
+#     testResultsFiles: '**/TEST-*.xml'
+#     buildPlatform: 'maven'
